@@ -2,58 +2,74 @@
 <html lang="en">
     <head>
         <title>Meeting</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-        <h1>Title</h1>
-        <h2>Documentation</h2>
-        <h3>2024/4/15</h3>
+        <section id="header">
+            <h1>Title</h1>
+            <h2>Documentation</h2>
+            <h3>2024/4/15</h3>
+        </section>
 
-        <h4>Attendance List</h4>
-        <ul>
-            <li>Minsang Kim</li>
-            <li>Isaac An</li>
-            <li>Ishika</li>
-        </ul>
+        <div class="flex-container">
+            <h4 class="attendance-list">Attendance List</h4>
+            <ul>
+                <li>Minsang Kim</li>
+                <li>Isaac An</li>
+                <li>Ishika</li>
+            </ul>
+        </div>
+        
+        <section class="flex-container">
+            <section class="agenda-container" id="test">
+                <h4>Agenda</h4>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </section>
 
-        <h4>Agenda</h4>
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
+            <section class="unfinished-container" id="test">
+                <h4>Unfinished Business</h4>
+                <ul>
+                    <li>Unfinished Item 1</li>
+                    <li>Unfinished Item 2</li>
+                </ul>
+            </section>
+            
+            <section class="new-container" id="test">
+                <h4>New Business</h4>
+                <ul>
+                    <li>New Item 1</li>
+                    <li>New Item 2</li>
+                </ul>
+            </section>
+        </section>
 
-        <h4>Unfinished Business</h4>
-        <ul>
-            <li>Unfinished Item 1</li>
-            <li>Unfinished Item 2</li>
-        </ul>
-
-        <h4>New Business</h4>
-        <ul>
-            <li>New Item 1</li>
-            <li>New Item 2</li>
-        </ul>
-
-        <h4>Miscellaneous Comments/Questions</h4>
-        <p>
-            Any concerns or questions should be addressed here.
-        </p>
-
-        <h4>Diagrams/Architecture</h4>
-        <p>Diagrams presented during the meeting:</p>
-        <img src="diagram1.png" alt="Diagram 1">
-        <img src="diagram2.png" alt="Diagram 2">
-
-        <section>
+        <section class="flex-container">
+            <h4>Miscellaneous Comments/Questions</h4>
+            <p>
+                Any concerns or questions should be addressed here.
+            </p>
+        </section>
+        
+        <section class="diagram-container">
+            <h4>Diagrams/Architecture</h4>
+            <p>Diagrams presented during the meeting:</p>
+            <img src="diagram1.png" alt="Diagram 1">
+            <img src="diagram2.png" alt="Diagram 2">
+        </section>
+        
+        <section class="audio-video-container">
             <h4>Meeting Recordings</h4>
             <p>Audio Recording:</p>
             <audio controls>
                 <source src="meeting.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-
             <p>Video Recording:</p>
-            <video controls>
+            <video controls class="video">
                 <source src="meeting.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>

@@ -1,0 +1,236 @@
+/* General CSS comments for better understanding */
+/* CSS Variables and Fallbacks */
+:root {
+    --main-bg-color: #e8e8e8; /* light grey background */
+    --text-color: #333333; /* dark grey text color */
+    --accent-color: #000000; /* orange color for accents */
+}
+
+body {
+    background-color: var(--main-bg-color, white); /* Fallback to white if variable is not found */
+}
+
+/* Color */
+h1 {
+    color: rgb(180, 65, 65);
+}
+
+h2 {
+    color: rgb(30, 97, 30);
+}
+
+h3 {
+    color: #6e6ef1;
+}
+
+h4 {
+    color: hsl(30, 91%, 64%);
+}
+
+/* Unit */
+h1 {
+    font-size: 2rem; /* relative unit */
+    margin-bottom: 1em; /* relative unit */
+}
+
+img {
+    width: 50vw; /* viewport width unit */
+    max-width: 500px; /* absolute unit */
+    height: auto; /* keeping aspect ratio */
+}
+
+/* Box Model */
+/* Using longhand */
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Using shorthand */
+ol {
+    margin: auto;
+}
+
+/* Padding */
+/* Using longhand */
+ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Using shorthand */
+ol {
+    padding: 10px;
+}
+
+/* Borders */
+.flex-container {
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-width: 2px;
+    border-radius: 5px;
+    width: auto; 
+    height: auto; 
+    max-width: 90%;
+    min-height: 90%;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.diagram-container {
+    text-align: center;
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-width: 2px;
+    border-radius: 5px;
+    width: auto; 
+    height: auto; 
+    max-width: 90%;
+    min-height: 90%;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.audio-video-container {
+    text-align: center;
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-width: 2px;
+    border-radius: 5px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Text */
+p {
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Display */
+.audio-video-container {
+    position:sticky;
+    display: block;
+}
+
+img {
+    display: inline-block;
+}
+
+/* Sizing */
+.audio-video-container {
+    width: auto; 
+    height: auto; 
+    max-width: 90%;
+    min-height: 90%;
+}
+
+/* Position */
+#header {
+    text-align: center;
+    position: relative;
+}
+
+/* Pseudo-class */
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Layouts */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* CSS Selectors */
+/* Class Selector */
+.attendance-list {
+    list-style-type: none;
+}
+
+/* ID Selector */
+#main-content {
+    padding: 20px;
+}
+
+/* Universal Selector */
+* {
+    color:#777
+}
+
+/* Element Selector */
+section {
+    margin-top: 20px;
+}
+
+/* Attribute Selector */
+section[id="test"] {
+    font-style: italic;
+}
+
+/* Combining Two Selectors */
+div.flex-container {
+    background-color: #dfff6d;
+}
+
+/* Pseudo-class Selector */
+div:hover {
+    background-color: #6e6ef1;
+}
+
+/* Selector List */
+h1, h2, h3, h4 {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Descendant Combinator */
+nav ul li {
+    display: inline;
+}
+
+
+/* Child Combinator */
+nav > ul {
+    padding: 5px;
+}
+
+/* General sibling combinator */
+h1 ~ p {
+    color: #777;
+}
+
+/* Adjacent sibling combinator */
+h4 + ul {
+    font-style:italic;
+}
+
+/* New Selectors */
+section:has(ul) {
+    background-color: #a1ffa7;
+}
+
