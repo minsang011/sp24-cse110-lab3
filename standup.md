@@ -51,4 +51,4 @@
 ## Next Meeting
 **Date:** YYYY-MM-DD  
 **Time:** HH:MM AM/PM  
-**Facilitator:** [Next Facilitator Name]
+**Facilitator:** 
